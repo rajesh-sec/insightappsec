@@ -1,1 +1,1 @@
-# insightappsec
+# InsightAppSec client
