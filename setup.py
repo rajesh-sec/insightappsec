@@ -18,56 +18,28 @@ install_requires = [x.strip() for x in all_reqs if ('git+' not in x) and (
     not x.startswith('#')) and (not x.startswith('-'))]
 dependency_links = [x.strip().replace('git+', '') for x in all_reqs \
                     if 'git+' not in x]
-                    
-if platform == 'win32':
-  setup (
-    name = 'appsec',
-    description = 'A simple commandline app for InsightAppSec',
-    version = '1.0.0',
-    packages = find_packages(), # list of all packages
-    install_requires = install_requires,
-    python_requires='>=3.6', # any python greater than 3.6
-    entry_points={
-        'console_scripts': [
-            'appsec = lib.__main__:main',
-        ]},
-    author="Rajesh Kumar",
-    keyword="Rapid7, Insightappsec, appsec, insightappsec-cli",
-    long_description=README,
-    long_description_content_type="text/markdown",
-    license='MIT',
-    url='',
-    #download_url='https://github.com/CITGuru/cver/archive/1.0.0.tar.gz',
-    dependency_links=dependency_links,
-    author_email='',
-    classifiers=[
-        "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3.6",
-    ]
-  )
-else:
-  setup (
-    name = 'appsec',
-    description = 'A simple commandline app for InsightAppSec',
-    version = '1.0.0',
-    packages = find_packages(), # list of all packages
-    install_requires = install_requires,
-    python_requires='>=3.6', # any python greater than 3.6
-    entry_points='''
-        [console_scripts]
-        appsec=lib.appsec:main
-    ''',
-    author="Rajesh Kumar",
-    keyword="Rapid7, Insightappsec, appsec, insightappsec-cli",
-    long_description=README,
-    long_description_content_type="text/markdown",
-    license='MIT',
-    url='',
-    #download_url='https://github.com/CITGuru/cver/archive/1.0.0.tar.gz',
-    dependency_links=dependency_links,
-    author_email='',
-    classifiers=[
-        "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3.6",
-    ]
-  )
+setup (
+  name = 'appsec',
+  description = 'A simple commandline app for InsightAppSec',
+  version = '1.0.0',
+  packages = find_packages(), # list of all packages
+  install_requires = install_requires,
+  python_requires='>=3.6', # any python greater than 3.6
+  entry_points={
+      'console_scripts': [
+          'appsec = lib.appsec:main',
+      ]},
+  author="Rajesh Kumar",
+  keyword="Rapid7, Insightappsec, appsec, insightappsec-cli",
+  long_description=README,
+  long_description_content_type="text/markdown",
+  license='MIT',
+  url='',
+  #download_url='https://github.com/CITGuru/cver/archive/1.0.0.tar.gz',
+  dependency_links=dependency_links,
+  author_email='',
+  classifiers=[
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python :: 3.6",
+  ]
+)
