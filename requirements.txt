@@ -1,0 +1,6 @@
+python-dateutil
+requests
+lxml
+openpyxl
+pandas
+beautifulsoup4
