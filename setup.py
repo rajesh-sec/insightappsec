@@ -29,7 +29,6 @@ if platform == 'win32':
     python_requires='>=3.6', # any python greater than 3.6
     scripts=['lib/appsec'],
     author="Rajesh Kumar",
-    keyword="Rapid7, Insightappsec, appsec, insightappsec-cli",
     long_description=README,
     long_description_content_type="text/markdown",
     license='MIT',
@@ -55,7 +54,6 @@ else:
         appsec=lib.appsec:main
     ''',
     author="Rajesh Kumar",
-    keyword="Rapid7, Insightappsec, appsec, insightappsec-cli",
     long_description=README,
     long_description_content_type="text/markdown",
     license='MIT',
