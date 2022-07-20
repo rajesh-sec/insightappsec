@@ -29,7 +29,7 @@ if platform == 'win32':
     python_requires='>=3.6', # any python greater than 3.6
     entry_points={
         'console_scripts': [
-            'appsec = lib.appsec.main',
+            'appsec = lib.appsec:main',
         ]},
     author="Rajesh Kumar",
     keyword="Rapid7, Insightappsec, appsec, insightappsec-cli",
