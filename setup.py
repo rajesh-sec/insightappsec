@@ -30,7 +30,7 @@ if platform == 'win32':
     entry_points={
         'console_scripts': [
             'appsec = lib.appsec.main',
-        ],
+        ]},
     author="Rajesh Kumar",
     keyword="Rapid7, Insightappsec, appsec, insightappsec-cli",
     long_description=README,
