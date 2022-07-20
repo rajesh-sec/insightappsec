@@ -2,6 +2,10 @@ from setuptools import setup, find_packages
 from io import open
 from os import path
 
+import pathlib
+# The directory containing this file
+HERE = pathlib.Path(__file__).parent
+
 with open(path.join(HERE, 'requirements.txt'), encoding='utf-8') as f:
     all_reqs = f.read().split('\n')
 
