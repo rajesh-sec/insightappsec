@@ -27,14 +27,10 @@ if platform == 'win32':
     packages = find_packages(), # list of all packages
     install_requires = install_requires,
     python_requires='>=3.6', # any python greater than 3.6
-    #entry_points={
-     #   'console_scripts': [
-     #       'appsec = lib.appsec:main',
-     #   ]},
-     entry_points='''
-        [console_scripts]
-        appsec=lib.appsec:main
-    ''',
+    entry_points={
+        'console_scripts': [
+            'appsec = lib.__main__:main',
+        ]},
     author="Rajesh Kumar",
     keyword="Rapid7, Insightappsec, appsec, insightappsec-cli",
     long_description=README,
